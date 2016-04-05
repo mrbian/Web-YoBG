@@ -1,0 +1,21 @@
+{
+  "name": "generator-koa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.oschina.net/mrbian/koa-generator.git"
+  },
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "author": "bian",
+  "license": "MIT",
+  "dependencies": {
+    "yeoman-generator": "^0.22.5"
+  }
+}
