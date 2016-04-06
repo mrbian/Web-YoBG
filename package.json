@@ -13,9 +13,19 @@
   "keywords": [
     "yeoman-generator"
   ],
+  "files":[
+    "app",
+    "common",
+    "models",
+    "test",
+    "views",
+    "script-base.js"
+  ],
   "author": "bian",
   "license": "MIT",
   "dependencies": {
-    "yeoman-generator": "^0.22.5"
+    "yeoman-assert": "^2.1.2",
+    "yeoman-generator": "^0.22.5",
+    "yeoman-test": "^1.1.0"
   }
 }
