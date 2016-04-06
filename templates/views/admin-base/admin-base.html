@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link rel="stylesheet" href="/dist/admin-commons.js.css">
+    <% content 'head' %>
+    <% ctx = require('../../../instances/context.js').get() %>
+    <% currentUser =  ctx.current.user %>
+</head>
+<body>
+<% include "admin-base/admin-header", {currentUser: currentUser}  %>
+<div class="page-container">
+    <% include "admin-base/admin-sidebar", {currentUser: currentUser}  %>
+    <div class="page-content">
+        <% content %>
+    </div>
+</div>
+<div class="footer">
+    <div>
+        2016 &copy; 泰昌科技
+        2016 &copy; OurEDA
+    </div>
+</div>
+<script src="/dist/admin-commons.js"></script>
+<% content 'scripts' %>
+</body>
+</html>
