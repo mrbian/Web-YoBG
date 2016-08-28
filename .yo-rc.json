@@ -1,6 +1,0 @@
-{
-  "generator-koa": {
-    "name": "koa",
-    "sql": "mysql"
-  }
-}

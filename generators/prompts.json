@@ -1,0 +1,32 @@
+[
+  {
+    "type" : "checkbox",
+    "name" : "sql",
+    "message": "Which kind of sql do you want to use?",
+    "choices": [
+      {
+        "value": "mysql",
+        "name": "mysql"
+      },
+      {
+        "value": "pgsql",
+        "name": "pgsql"
+      }
+    ]
+  },
+  {
+    "type" : "checkbox",
+    "name" : "version",
+    "message": "Which version of javascript do you want to use?",
+    "choices": [
+      {
+        "value": "ES5",
+        "name": "ES5"
+      },
+      {
+        "value": "ES6",
+        "name": "ES6"
+      }
+    ]
+  }
+]
