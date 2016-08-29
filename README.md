@@ -1,8 +1,27 @@
 #backstage-generator
 后端脚手架生成器
 
-- 后台需要确认的有sql的选择，使用ES5还是ES6，填写好配置文件，整个应用的名称。
-- 后台不应该有webpack压缩的权限，应该是前端给了压缩好的文件，后台拿着文件去配置好。
-- 应该添加modelAdaptor层。
-- 抛弃小地主那一套。
-- 加入自动化。
+### 说明
+- 可以选择koa2还是koa1
+- 自动为文件头加入作者信息和创建日期
+
+### 使用
+现在：
+```
+git clone https://git.oschina.net/mrbian/koa-generator.git
+cd koa-generator
+npm link
+
+// change directory
+mkdir app
+cd app
+yo backstage
+```
+
+如果以后npm包注册成功
+```
+npm install -g generator-backstage
+mkdir test 
+cd test
+yo backstage
+```
