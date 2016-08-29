@@ -25,3 +25,6 @@ mkdir test
 cd test
 yo backstage
 ```
+
+### 友情提示
+- 使用Webstorm将templates文件夹mark成outproject，让webstorm自动的Inspection对templates文件夹下的文件失效
