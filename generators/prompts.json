@@ -9,23 +9,23 @@
         "name": "mysql"
       },
       {
-        "value": "pgsql",
-        "name": "pgsql"
+        "value": "postgres",
+        "name": "postgres"
       }
     ]
   },
   {
     "type" : "list",
     "name" : "version",
-    "message": "Which version of javascript do you want to use?",
+    "message": "Which version of koa do you want to use?",
     "choices": [
       {
-        "value": "ES5",
-        "name": "ES5"
+        "value": "koa2",
+        "name": "koa2"
       },
       {
-        "value": "ES6",
-        "name": "ES6"
+        "value": "koa1",
+        "name": "koa1"
       }
     ]
   },
@@ -34,5 +34,11 @@
     "name" : "name",
     "message" : "What's your name",
     "default" : "bian"
+  },
+  {
+    "type" : "input",
+    "name" : "project",
+    "message" : "What's your project name",
+    "default" : "backstage"
   }
 ]

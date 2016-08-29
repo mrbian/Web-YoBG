@@ -5,6 +5,7 @@
  * @createDate 2016.8.28
  */
 var path = require("path");
+var options = require("./mock-options");
 
 module.exports = function (Generator) {
 
@@ -17,14 +18,16 @@ module.exports = function (Generator) {
             this.template(this.templatePath(dest),join(process.cwd(),dest),data);
         }.bind(this);
 
-        template("test.js",{
-            name : "bian",
-            createDate : "hello"
-        });
+        var answers = this.props.answers;
+        var sql = answers.sql;
+        var version = answers.version;
+        var author = answers.name;
+        var project = answers.project;
+        var date = new Date();
+        date = `${date.getYear()}.${date.getMonth()}.${date.getDay()}`;
 
-        template("test",{
-            name : "sdd",
-            createDate : "sdds"
+        Object.keys(options.paths).forEach((e) => {
+             console.log(e);
         });
     };
 };

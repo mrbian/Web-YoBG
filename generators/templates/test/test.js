@@ -1,5 +1,0 @@
-/**
- *
- * @author <%= name %>
- * @createDate <%= createDate %>
- */
