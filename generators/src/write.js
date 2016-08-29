@@ -25,18 +25,23 @@ module.exports = function (Generator) {
         var author = answers.name;
         var project = answers.project;
         var date = new Date();
-        date = `${date.getYear()}.${date.getMonth()}.${date.getDay()}`;
+        date = `${date.getFullYear()}.${date.getUTCMonth()}.${date.getUTCDay()}`;
 
-        Object.keys(options.paths).forEach((name) => {
-             template(name,options.paths[name],{
-                 author : author,
-                 version : version,
-                 sql : sql,
-                 project : project,
-                 date : date
-             });
-        });
+        var paths = options.paths;
+        try{
+            Object.keys(options.paths).forEach((name) => {
+                template(name,options.paths[name],{
+                    author : author,
+                    version : version,
+                    sql : sql,
+                    project : project,
+                    date : date
+                });
+            });
+        }catch(err){
+            this.log(err);
+        }
 
-        chalk.green("file template copy is over");
+        this.log("file template copy is over");
     };
 };

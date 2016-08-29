@@ -1,74 +1,86 @@
 [
   {
+    "name": "conf",
+    "type": "folder",
+    "desc": "conf folder, relative to cwd",
+    "default": "conf"
+  },
+  {
+    "name": "modelsAdaptor",
+    "type": "folder",
+    "desc": "modelsAdaptor folder, relative to cwd",
+    "default": "modelsAdaptor"
+  },
+  {
     "name": "models",
     "type": "folder",
     "desc": "models folder, relative to cwd",
-    "defaults": "models"
+    "default": "models"
   },
   {
     "name": "router",
     "type": "folder",
     "desc": "routers folder, relative to cwd",
-    "defaults": "router"
+    "default": "router"
   },
   {
     "name": "instances",
     "type": "folder",
     "desc": "instances folder, relative to cwd",
-    "defaults": "instances"
+    "default": "instances"
   },
   {
     "name": "public",
     "type": "folder",
     "desc": "public folder, relative to cwd",
-    "defaults": "public"
+    "default": "public"
   },
   {
     "name": "test",
     "type": "folder",
     "desc": "test folder, relative to cwd",
-    "defaults": "test"
+    "default": "test"
   },
   {
     "name": "lib",
     "type": "folder",
     "desc": "lib folder, relative to cwd",
-    "defaults": "lib"
+    "default": "lib"
   },
   {
     "name": "views",
     "type": "folder",
     "desc": "views folder, relative to cwd",
-    "defaults": "views"
+    "default": "views"
   },
   {
     "name": ".babelrc",
     "type": "file",
     "desc": "babel config, relative to cwd",
-    "defaults": ".babelrc"
+    "default": ".babelrc"
   },
   {
     "name": "gulpfile.js",
     "type": "file",
     "desc": "gulp config, relative to cwd",
-    "defaults": "gulpfile.js"
+    "default": "gulpfile.js"
   },
   {
     "name": "index.js",
     "type": "file",
     "desc": "index.js, relative to cwd",
-    "defaults": "index.js"
+    "default": "index.js"
   },
   {
     "name": "nodemon.json",
     "type": "file",
     "desc": "nodemon config, relative to cwd",
-    "defaults": "nodemon.json"
+    "default": "nodemon.json"
   },
   {
     "name": "package.json",
     "type": "file",
     "desc": "npm config, relative to cwd",
-    "defaults": "package.json"
+    "default": "package.json"
   }
 ]

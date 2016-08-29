@@ -4,9 +4,9 @@
  * @author <%= author %>
  * @createDate <%= date %>
  */
-<% if (version === "koa2") { %
+<% if (version === "koa2") { %>
 import path from "path";
-<% } else {%>
+<% } else { %>
 var path = require("path");
 <% } %>
 const Config = {

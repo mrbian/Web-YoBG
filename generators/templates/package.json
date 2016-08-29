@@ -8,8 +8,7 @@
     <% if (version === "koa2") { %>
     "start": "nodemon --exec babel-node index.js",
     "compress": "babel ../<%= project %> -d ../<%= project %>.compile --ignore node_modules,test"
-    <% } %>
-    <% else { %>
+    <% }else{ %>
     "start" : "supervisor -i public,views,test,*.log index.js"
     <% } %>
   },

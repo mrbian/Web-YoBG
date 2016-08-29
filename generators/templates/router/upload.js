@@ -4,3 +4,6 @@
  * @author <%= author %>
  * @createDate <%= date %>
  */
+module.exports = (router) => {
+
+};
