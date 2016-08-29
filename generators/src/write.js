@@ -6,6 +6,7 @@
  */
 var path = require("path");
 var options = require("./mock-options");
+var chalk = require("chalk");
 
 module.exports = function (Generator) {
 
@@ -13,9 +14,9 @@ module.exports = function (Generator) {
         var join = path.join;
         this.sourceRoot(join(__dirname,"../templates"));
 
-        var template = function (dest,data) {           // 使用ejs模板创建文件和文件夹
-            this.log("copy",dest);
-            this.template(this.templatePath(dest),join(process.cwd(),dest),data);
+        var template = function (src,dest,data) {           // 使用ejs模板创建文件和文件夹
+            this.log(`copy ${dest} from ${src}`);
+            this.template(this.templatePath(src),join(process.cwd(),dest),data);
         }.bind(this);
 
         var answers = this.props.answers;
@@ -26,8 +27,16 @@ module.exports = function (Generator) {
         var date = new Date();
         date = `${date.getYear()}.${date.getMonth()}.${date.getDay()}`;
 
-        Object.keys(options.paths).forEach((e) => {
-             console.log(e);
+        Object.keys(options.paths).forEach((name) => {
+             template(name,options.paths[name],{
+                 author : author,
+                 version : version,
+                 sql : sql,
+                 project : project,
+                 date : date
+             });
         });
+
+        chalk.green("file template copy is over");
     };
 };

@@ -18,10 +18,10 @@
     "defaults": "instances"
   },
   {
-    "name": "dist",
+    "name": "public",
     "type": "folder",
-    "desc": "dist folder, relative to cwd",
-    "defaults": "dist"
+    "desc": "public folder, relative to cwd",
+    "defaults": "public"
   },
   {
     "name": "test",
@@ -40,5 +40,35 @@
     "type": "folder",
     "desc": "views folder, relative to cwd",
     "defaults": "views"
+  },
+  {
+    "name": ".babelrc",
+    "type": "file",
+    "desc": "babel config, relative to cwd",
+    "defaults": ".babelrc"
+  },
+  {
+    "name": "gulpfile.js",
+    "type": "file",
+    "desc": "gulp config, relative to cwd",
+    "defaults": "gulpfile.js"
+  },
+  {
+    "name": "index.js",
+    "type": "file",
+    "desc": "index.js, relative to cwd",
+    "defaults": "index.js"
+  },
+  {
+    "name": "nodemon.json",
+    "type": "file",
+    "desc": "nodemon config, relative to cwd",
+    "defaults": "nodemon.json"
+  },
+  {
+    "name": "package.json",
+    "type": "file",
+    "desc": "npm config, relative to cwd",
+    "defaults": "package.json"
   }
 ]
