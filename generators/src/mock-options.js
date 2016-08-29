@@ -1,5 +1,5 @@
 /**
- * 从options.json获得默认的options，可以让测试代码或其他地方获得默认的options
+ * 从options.json获得默认的options，方便测试
  *
  * @author bian
  * @createDate 2016.8.28
@@ -8,11 +8,13 @@
 var options = require('../options.json');
 
 var mockOptions = {
-    defaults: {}
+    paths: {},
+    type : {}
 };
 
-options.forEach(function (option) {
-    mockOptions.defaults[option.name] = option.defaults;
+options.forEach(function(option){
+    mockOptions.paths[option.name] = option.default;
+    mockOptions.type[option.name] = option.type;
 });
 
 module.exports = mockOptions;

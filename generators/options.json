@@ -1,44 +1,44 @@
 [
   {
-    "name": "models-path",
-    "type": "String",
-    "required": false,
+    "name": "models",
+    "type": "folder",
     "desc": "models folder, relative to cwd",
     "defaults": "models"
   },
   {
-    "name": "routers-path",
-    "type": "String",
-    "required": false,
+    "name": "router",
+    "type": "folder",
     "desc": "routers folder, relative to cwd",
     "defaults": "router"
   },
   {
-    "name": "instances-path",
-    "type": "String",
-    "required": false,
+    "name": "instances",
+    "type": "folder",
     "desc": "instances folder, relative to cwd",
     "defaults": "instances"
   },
   {
-    "name": "dist-path",
-    "type": "String",
-    "required": false,
+    "name": "dist",
+    "type": "folder",
     "desc": "dist folder, relative to cwd",
     "defaults": "dist"
   },
   {
-    "name": "test-path",
-    "type": "String",
-    "required": false,
+    "name": "test",
+    "type": "folder",
     "desc": "test folder, relative to cwd",
     "defaults": "test"
   },
   {
-    "name": "lib-path",
-    "type": "String",
-    "required": false,
+    "name": "lib",
+    "type": "folder",
     "desc": "lib folder, relative to cwd",
     "defaults": "lib"
+  },
+  {
+    "name": "views",
+    "type": "folder",
+    "desc": "views folder, relative to cwd",
+    "defaults": "views"
   }
 ]

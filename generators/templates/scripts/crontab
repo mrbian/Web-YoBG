@@ -1,3 +1,0 @@
-*/5 * * * * /usr/local/bin/node /home/oureda/www/
-
-1 1 * * * echo "" > /home/oureda/www/
