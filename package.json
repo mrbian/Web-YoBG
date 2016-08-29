@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mkdir tmp & npm link & cd tmp & yo backstage",
-    "start" : "mkdir tmp & npm link & cd tmp & yo backstage"
+    "test": "mkdir tmp && sudo npm link && cd tmp && yo backstage",
+    "start" : "mkdir tmp && sudo npm link && cd tmp && yo backstage"
   },
   "repository": {
     "type": "git",
