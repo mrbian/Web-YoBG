@@ -20,3 +20,5 @@ log/*
 public/dist
 public/upload
 dump.rdb
+
+tmp

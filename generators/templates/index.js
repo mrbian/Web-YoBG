@@ -46,32 +46,32 @@ export default app;
 
 <% } else { %>
 // library module
-var koa = require('koa');
-var koaBody = require('koa-body');
-var staticServer = require('koa-static');
-var favicon = require('koa-favicon');
-var koaValidate = require('koa-validate');
+var koa = require("koa");
+var koaBody = require("koa-body");
+var staticServer = require("koa-static");
+var favicon = require("koa-favicon");
+var koaValidate = require("koa-validate");
 
 // local module
-var path = require('path');
+var path = require("path");
 
 // my module
-var cache = require('./instances/cache');
-var router = require('./routes/index');
-var log = require('./instances/log.js');
+var cache = require("./lib/cache");
+var router = require("./router/index");
+var log = require("./instances/logger");
 
 // my config
-var pkg = require('./package.json');
+var pkg = require("./package.json");
 var port = pkg.port;
 
 // ------------------------------------------------
 var app = koa();
-app.env = 'development';
+app.env = "development";
 
 // static file
-app.use(staticServer(path.join( __dirname, 'public')));
+app.use(staticServer(path.join( __dirname, "public")));
 // favicon
-app.use(favicon(__dirname + '/public/favicon.ico'));
+app.use(favicon(__dirname + "/public/favicon.ico"));
 // http parse
 app.use(koaBody());
 //request validate
@@ -79,9 +79,9 @@ app.use(koaValidate());
 // route
 app.use(router);
 
-// app.on('error', (err, ctx) => {
+// app.on("error", (err, ctx) => {
 //     console.log(err);
-//     log.error('server error', err, ctx);
+//     log.error("server error", err, ctx);
 //  });
 app = app.listen(port);
 module.exports = app;

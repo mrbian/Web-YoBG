@@ -24,7 +24,7 @@ const Config = {
     redis:{
         host : "127.0.0.1",
         pwd : "",
-        prefix : "xueban3"
+        prefix : "<%= project %>"
     },
 
     ftp : {
