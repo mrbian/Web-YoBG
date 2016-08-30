@@ -31,7 +31,7 @@ var Generator = yeoman.Base.extend({
     }
 });
 
-require("../src/options")(Generator);
+require("../src/paths")(Generator);
 require("../src/prompts")(Generator);
 require("../src/write")(Generator);
 require("../src/install")(Generator);
