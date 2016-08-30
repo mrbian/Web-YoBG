@@ -5,7 +5,7 @@
  * @createDate 2016.8.28
  */
 var path = require("path");
-var paths = require("./mock-paths");
+var mockPaths = require("./mock-paths");
 var chalk = require("chalk");
 
 module.exports = function (Generator) {
@@ -27,10 +27,10 @@ module.exports = function (Generator) {
         var date = new Date();
         date = `${date.getFullYear()}.${date.getUTCMonth()}.${date.getUTCDay()}`;
 
-        var paths = paths.paths;
+        var paths = mockPaths.paths;
         try{
-            Object.keys(paths.paths).forEach((name) => {
-                template(name,paths.paths[name],{
+            Object.keys(paths).forEach((name) => {
+                template(name,paths[name],{
                     author : author,
                     version : version,
                     sql : sql,
