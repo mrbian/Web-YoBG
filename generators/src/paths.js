@@ -5,10 +5,10 @@
  * @createDate 2016.8.28
  */
 
-var options = require("./mock-options");
+var paths = require("./mock-paths");
 module.exports = function(Generator){
 
     Generator.prototype.getOptions = function(){
-        this.props.options = options;
+        this.props.paths = paths;
     };
 };

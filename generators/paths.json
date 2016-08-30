@@ -82,5 +82,11 @@
     "type": "file",
     "desc": "npm config, relative to cwd",
     "default": "package.json"
+  },
+  {
+    "name" : ".eslintrc.json",
+    "type" : "file",
+    "desc" : "eslint config file, relative to cwd",
+    "default" : ".eslintrc.json"
   }
 ]
